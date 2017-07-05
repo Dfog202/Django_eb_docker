@@ -16,5 +16,8 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static_root')
 DEBUG = False
 ALLOWED_HOSTS = config_secret_deploy['django']['allowed_hosts']
 
+# Database
+DATABASES = config_secret_deploy['django']['databases']
+
 print('@@@@@@ DEBUG:', DEBUG)
 print('@@@@@@ ALLOWED_HOSTS:', ALLOWED_HOSTS)
